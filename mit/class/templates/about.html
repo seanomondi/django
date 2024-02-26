@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
-<body>
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block body %}
+
 <h2>ABOUT PAGE</h2>
 
-<p>this is the about page made using html</p>
 
-<ol>
-    <li>A</li>
-    <li>B</li>
-    <li>C</li>
-</ol>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad alias commodi corporis delectus dolorum eius eligendi eveniet impedit nisi nostrum, quae quaerat quam sequi soluta voluptas voluptate voluptates?</p>
 
-</body>
-</html>
+
+<img src="{% static 'images/image2.jpg' %}" class="img-thumbnail" alt="...">
+
+
+{% endblock %}

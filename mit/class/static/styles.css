@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+}
+
+.location-body{
+    background-color: palevioletred;
+}
+
+p{
+    background-color: gold;
+}
+
+iframe{
+    height: 100%;
+}

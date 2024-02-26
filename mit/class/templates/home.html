@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <style>
-        body{
-            background-color: lightblue;
-        }
-    </style>
-</head>
-<body>
+{% extends 'layout.html' %}
 
-<h2>HOME</h2>
+{% load static %}
 
-<p>this is the homepage</p>
+{% block body %}
 
-</body>
-</html>
+    <h2>HOME</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, beatae blanditiis, debitis dolores dolorum ea eos ex ipsa maiores optio porro praesentium qui suscipit voluptas, voluptatem! Dignissimos doloribus eum tenetur.</p>
+
+
+
+    <img src="{% static 'images/image2.jpg' %}" class="img-fluid" alt="...">
+{% endblock %}
