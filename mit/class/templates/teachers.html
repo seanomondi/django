@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teachers</title>
+      <style>
+        table,tr,td{
+            border-collapse: collapse;
+            border: black 1px solid;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>TEACHERS LIST</h2>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Phone</td>
+        <td>Email</td>
+    </tr>
+
+    {% for y in teachers %}
+
+    <tr>
+        <td>{{ y.name }}</td>
+        <td>{{ y.phone }}</td>
+        <td>{{ y.email }}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+</body>
+</html>

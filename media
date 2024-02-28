@@ -1,0 +1,32 @@
+(1)create media folder within the project
+
+
+(2)in settings.py;
+    import os
+
+[under STATIC_URL = 'static/']:
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+(3)in the project urls;
+[imports]:  from django.conf.urls.static import static
+            from django.conf import settings
+
+[immediately after urlpatterns closing square brackets]:
+        +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+(4)in models.py within the required class;
+    image = models.ImageField(upload_to='folder_name/', blank=False, default="default.jpg")
+
+(5)in the required html file;
+    <form action="" method="post" enctype="multipart/form-data">    
+    add an input field ;type="file"
+
+(6)make migrations
+
+(7)run migrations
+
+
+
+
