@@ -18,11 +18,17 @@
         +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 (4)in models.py within the required class;
-    image = models.ImageField(upload_to='folder_name/', blank=False, default="default.jpg")
+    image = models.ImageField(upload_to='folder_name/', blank=False, default="default_image")
+
+    *the folder is created automatically
 
 (5)in the required html file;
-    <form action="" method="post" enctype="multipart/form-data">    
-    add an input field ;type="file"
+    <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}    
+    
+    give a name attribute to all input/select fields in line with the models
+    image input field; type="file"
+    button; type="submit"
 
 (6)make migrations
 
