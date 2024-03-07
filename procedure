@@ -1,0 +1,36 @@
+
+(1)create a django project;
+        [django-admin startproject project_name]
+
+(2)inside the created project, create an app
+        [django-admin startapp app_name]
+
+(3)in the project settings file, install the app
+
+(4)inside the app folder, create a urls file
+
+(5)in the project urls, import include 
+        [from django.urls import path, include]
+
+(6)create a default url/path and include your app's urls file
+        [path('', include("app_name.urls"))]
+
+(7)in the app urls file, within the urls pattern, create a default path/urls and specify the function !don't forget to import views!
+
+-------------------------------
+from django.urls import path
+from . import views
+
+urlpatterns = [
+
+    path('', views.home, name='home')
+
+]
+--------------------------------
+
+(8)in the views files, define the functions referenced in the app urls
+
+(9)run server in manage.py location
+        [python3 manage.py runserver]
+
+

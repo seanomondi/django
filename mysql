@@ -1,0 +1,21 @@
+
+(1)in settings.py;
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'database_name',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': '127.0.0.1',
+            'PORT': '3306'
+        }
+    }
+
+(2)in the XAMPP file location, open in terminal;
+        [chmod 755 xampp_filename]
+        [sudo /opt/lampp/lampp start]
+
+(3)in localhost/phpmyadmin create the database
+
+(4)in the project manage.py location, run migrations
+

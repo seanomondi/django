@@ -1,3 +1,4 @@
+
 making migrations: python3 manage.py makemigrations
 running migrations: python3 manage.py migrate
 creating a superuser: python3 manage.py createsuperuser
